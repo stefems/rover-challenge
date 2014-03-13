@@ -1,6 +1,6 @@
 # Rover Coding Project
 
-The goal of this project to create a web interface for a database of dogs and their owners. You can use any language and frameworks you’d like to complete this project. While the project itself is simple, we're not just looking to see if you can complete the project. Please take your time and show us what you care about when you're writing software.
+The goal of this project to create a web interface for a database of dogs and their owners. You can use any language and frameworks you’d like to complete this project. While the project itself is simple, we're not just looking to see if you can complete the project. Please take your time and show us what you care about when you're writing software. The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
 
 
 ### Requirements
