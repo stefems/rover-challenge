@@ -14,7 +14,9 @@ This is not a trick project, so if you have any questions, don’t hesitate to a
 
 ## Rebuilding Profiles
 
-We were able to write a script and scrape the Google index for all of the reviews customers have left of sitters.  We have saved that information in the attached .csv file. Design a database schema and import the provided data.
+We were able to write a script and scrape the Google index for all of the reviews customers have left of sitters.  We have saved that information in the attached CSV. Design a database schema and import the provided data.
+
+Note: If a stay includes multiple dogs, those names will be included in the same column of the CSV "|" delimited.
 
 ## Recreating the Search Ranking Algorithm
 
