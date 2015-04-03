@@ -9,7 +9,7 @@ We'd like to:
 - Build an appealing search results page
 
 You can use any language and frameworks you'd like to complete this project,
-but we'll best be able to evaluate your project if you write it using Django or Rails. 
+but we'll best be able to evaluate your project if you write it using Django or Rails.
 
 The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
 Our expectation is that you'll write production quality code including tests.
@@ -30,9 +30,9 @@ We need to recreate the ranking of sitters when they are displayed on the site. 
 
 - For each sitter, we calculate Overall Sitter Rank.
 - Overall Sitter Rank is a weighted combination of the Sitter Score and Ratings Score.
-- Sitter Score is 5 times the percentage of the English alphabet that occurs in their first and last names.
+- Sitter Score is 5 times the fraction of the English alphabet comprised by the disinct letters in what we've recovered of the sitter's name.
 - Ratings Score is the average of their stay ratings.
-- When a sitter has no stays, their Overall Sitter Rank is equal to the Sitter Score.  When a sitter has 10 or more stays, their Overall Sitter Rank is equal to the Ratings Score.  When a sitter has 1 to 9 stays, then we transition from one score to the other by weighting the two scores by the number of stays, discounting the Sitter Score and increasing the Ratings Score.
+- The Overall Sitter Rank is a weighted average of the Sitter Score and Ratings Score, weighted by the number of stays. When a sitter has no stays, their Overall Sitter Rank is equal to the Sitter Score.  When a sitter has 10 or more stays, their Overall Sitter Rank is equal to the Ratings Score.
 
 ## Building a Sitter List
 
