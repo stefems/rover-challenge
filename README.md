@@ -46,3 +46,23 @@ Each row should display one sitter with their name, photo and the average of the
 Finally, we need to allow customers to filter out sitters on the page with poor average stay ratings.
 Without making another request to the server, allow users to filter out sitters whose average ratings is below a user specified value.
 It’s okay to use UI controls &mdash; sliders, checkboxes, etc &mdash; that limit the values users can enter.
+
+## Hint for Testing the Search Ranking Algorithm
+Suppose there is a sitter whose Sitter Score is 2.5 and gets rating of 5.0 with every stay. Then, their score should
+behave like:
+
+| Stay          | Overall Sitter Rank         |
+| ------------- | ------------- |
+| 0 | 2.50
+| 1 | 2.75
+| 2 | 3.00
+| 3 | 3.25
+| 4 | 3.50
+| 5 | 3.75
+| 6 | 4.00
+| 7 | 4.25
+| 8 | 4.50
+| 9 |  4.75
+| 10 | 5.00
+| 11 | 5.00
+| 12 | 5.00
