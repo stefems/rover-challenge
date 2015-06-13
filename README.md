@@ -34,6 +34,7 @@ We need to recreate the ranking of sitters when they are displayed on the site. 
 - Sitter Score is 5 times the fraction of the English alphabet comprised by the disinct letters in what we've recovered of the sitter's name.
 - Ratings Score is the average of their stay ratings.
 - The Overall Sitter Rank is a weighted average of the Sitter Score and Ratings Score, weighted by the number of stays. When a sitter has no stays, their Overall Sitter Rank is equal to the Sitter Score.  When a sitter has 10 or more stays, their Overall Sitter Rank is equal to the Ratings Score.
+- In the event that two or more sitters have the same Overall Sitter Rank, the ordering is unimportant and does not need to be handled.
 
 ## Building a Sitter List
 
