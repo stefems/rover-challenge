@@ -17,7 +17,9 @@ Our expectation is that you'll write production quality code including tests.
 
 While not required, we encourage you to to add a readme (or update the existing one) to help us understand your approach work and thought process...design choices, trade-offs, dependencies, etc.
 
-This is not a trick project, so if you have any questions, don't hesitate to ask.
+Typically, the project takes 2-4 hours to complete.  There is no time limit, although we don't want to take too much of your time, so we advise people to not spend more than 5 hours on the project.
+
+Finally, this is not a trick project, so if you have any questions, don't hesitate to ask.
 
 ## Rebuilding Profiles
 
