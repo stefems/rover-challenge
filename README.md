@@ -34,19 +34,21 @@ Using the information in the file, we need to design a database schema and impor
 
 ## Recreating the Search Ranking Algorithm
 
-We need to recreate the ranking of sitters when they are displayed on the site. Here's the algorithm we use to rank sitters:
-
 - For each sitter, we calculate Overall Sitter Rank.
 - Sitter Score is 5 times the fraction of the English alphabet comprised by the disinct letters in what we've recovered of the sitter's name.
 - Ratings Score is the average of their stay ratings.
 - The Overall Sitter Rank is a weighted average of the Sitter Score and Ratings Score, weighted by the number of stays. When a sitter has no stays, their Overall Sitter Rank is equal to the Sitter Score.  When a sitter has 10 or more stays, their Overall Sitter Rank is equal to the Ratings Score.
 - In the event that two or more sitters have the same Overall Sitter Rank, the ordering is unimportant and does not need to be handled.
 
-The Overall Sitter Rank and it's score components must be kept up to date. That means whenever a relevant event happens, that could affect the Overall Sitter Rank, we need to recompute it so that it's reflected on the Sitter List (see below). Think about what can make the Overall Sitter Rank change.
+The Overall Sitter Rank and it's score components must be kept up to date. That means whenever a relevant event happens, that could affect the Overall Sitter Rank, we need to recompute it.
+
+Think about what can make the Overall Sitter Rank change.
 
 ## Building a Sitter List
 
-We need to display the sitters on a page in order of rank. This should be easy, simply render a list of sitters. Each row should display one sitter with their name, photo and the average of their stay ratings.
+We need to display the sitters on a page in order of rank. This should be easy, simply render a list of sitters.
+
+Each row should display one sitter with their name, photo and the average of their stay ratings.
 
 **NOTE**: Make sure your search sorting and listing can scale well to a large number of records.
 
