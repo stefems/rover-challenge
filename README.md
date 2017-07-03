@@ -21,8 +21,9 @@ Typically, the project takes 2-4 hours to complete.  There is no time limit, alt
 
 Finally, this is not a trick project, so if you have any questions, don't hesitate to ask.
 
-### When you're done with the project... ###
-When you're done with the project, push your work back into the repo.  Then, reply to the email you received from Jazz letting us know you've pushed your project.  You may be tempted to email us directly, but don't do that because we rely on Jazz to keep on top of candidates in process.  Replying through Jazz will help ensure you don't slip through the cracks.
+### When you're done with the project...
+
+When you're done with the project, push your work back into the repo.  Then, reply to the email you received from us letting us know you've pushed your project.  You may be tempted to email us directly, but don't do that because we rely on an applicant tracking system (ATS) to keep on top of candidates in process. Replying through it will help ensure you don't slip through the cracks.
 
 ## Rebuilding Profiles
 
