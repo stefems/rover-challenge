@@ -36,7 +36,7 @@ Using the information in the file, we need to design a database schema and impor
 ## Recreating the Search Ranking Algorithm
 
 - For each sitter, we calculate Overall Sitter Rank.
-- Sitter Score is 5 times the fraction of the English alphabet comprised by the disinct letters in what we've recovered of the sitter's name.
+- Sitter Score is 5 times the fraction of the English alphabet comprised by the distinct letters in what we've recovered of the sitter's name.
 - Ratings Score is the average of their stay ratings.
 - The Overall Sitter Rank is a weighted average of the Sitter Score and Ratings Score, weighted by the number of stays. When a sitter has no stays, their Overall Sitter Rank is equal to the Sitter Score.  When a sitter has 10 or more stays, their Overall Sitter Rank is equal to the Ratings Score.
 - In the event that two or more sitters have the same Overall Sitter Rank, the ordering is unimportant and does not need to be handled.
