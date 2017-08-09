@@ -15,7 +15,7 @@ Otherwise, use the language and frameworks that you feel will best show your ski
 The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
 Our expectation is that you'll write production quality code including tests.
 
-While not required, we encourage you to to add a readme (or update the existing one) to help us understand your approach work and thought process...design choices, trade-offs, dependencies, etc.
+We encourage you to to add a readme (or update the existing one) to help us understand your approach work and thought process...design choices, trade-offs, dependencies, etc. Please include instructions on how to setup/run your project locally.
 
 Typically, the project takes 2-4 hours to complete.  There is no time limit, although we don't want to take too much of your time, so we advise people to not spend more than 5 hours on the project.
 
