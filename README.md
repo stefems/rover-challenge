@@ -17,8 +17,6 @@ Our expectation is that you'll write production quality code including tests.
 
 We encourage you to to add a readme (or update the existing one) to help us understand your approach work and thought process...design choices, trade-offs, dependencies, etc. Please include instructions on how to setup/run your project locally.
 
-Typically, the project takes 2-4 hours to complete.  There is no time limit, although we don't want to take too much of your time, so we advise people to not spend more than 5 hours on the project.
-
 Finally, this is not a trick project, so if you have any questions, don't hesitate to ask.
 
 ### When you're done with the project...
@@ -56,7 +54,7 @@ Each row should display one sitter with their name, photo and the average of the
 ## Filtering Sitters
 
 Finally, we need to allow customers to filter out sitters on the page with poor average stay ratings.
-Without making another request to the server, allow users to filter out sitters whose average ratings is below a user specified value.
+Allow users to filter out sitters whose average ratings is below a user specified value.
 It’s okay to use UI controls &mdash; sliders, checkboxes, etc &mdash; that limit the values users can enter.
 
 ## Hint for Testing the Search Ranking Algorithm
