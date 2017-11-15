@@ -8,9 +8,7 @@ We'd like to:
 - Recreate a search ranking algorithm
 - Build an appealing search results page
 
-You can use any language and frameworks you'd like to complete this project.
-We're a Django shop, so if you feel strong with Django, please use that.
-Otherwise, use the language and frameworks that you feel will best show your skills.
+You can use any language and frameworks you'd like to complete this project. Use the language and frameworks that you feel will best show your skills.
 
 The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
 Our expectation is that you'll write production quality code including tests.
