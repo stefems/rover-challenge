@@ -43,9 +43,9 @@ Think about what can make the Overall Sitter Rank change.
 
 ## Building a Sitter List
 
-We need to display the sitters on a page in order of rank. This should be easy, simply render a list of sitters.
+We need to display the sitters on a page in order of their *Overall Sitter Rank*. This should be easy, simply render a list of sitters.
 
-Each row should display one sitter with their name, photo and the average of their stay ratings.
+Each row should display one sitter with their name, photo and their *Ratings Score*. We want to display just their *Ratings Score*, but sort by their *Overall Sitter Rank*. Think of the *Ratings Score* as a publicly disclosed concept and sitter attribute, and the *Overall Sitter Rank* as Rover's marketplace "secret sauce" that should remain private.
 
 **NOTE**: Make sure your search sorting and listing can scale well to a large number of records.
 
