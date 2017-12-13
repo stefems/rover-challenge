@@ -8,7 +8,7 @@ We'd like to:
 - Recreate a search ranking algorithm
 - Build an appealing search results page
 
-You can use any language and frameworks you'd like to complete this project. Use the language and frameworks that you feel will best show your skills.
+**Please use the languages and frameworks that you feel will best show your skills. Keep in mind that if you are brought for an in-person interview, you will continue building upon this solution. Don't use this project as an opportunity to learn new frameworks or new versions of known frameworks; use what you know best so that you set yourself up for success.**
 
 The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
 Our expectation is that you'll write production quality code including tests.
