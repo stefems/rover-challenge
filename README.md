@@ -10,10 +10,7 @@ We'd like to:
 
 **Please use the languages and frameworks that you feel will best show your skills. Keep in mind that if you are brought for an in-person interview, you will continue building upon this solution. Don't use this project as an opportunity to learn new frameworks or new versions of known frameworks; use what you know best so that you set yourself up for success.**
 
-The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow.
-Our expectation is that you'll write production quality code including tests.
-
-We encourage you to to add a readme (or update the existing one) to help us understand your approach work and thought process...design choices, trade-offs, dependencies, etc. Please include instructions on how to setup/run your project locally.
+The work you create here should be representative of code that we'd expect to receive from you if you were hired tomorrow (proper abstractions, unit tests, best practices, etc). We encourage you to to add a readme (or update the existing one) to help us understand your approach and thought process, design choices, trade-offs, dependencies, etc. Please include instructions on how to setup/run your project locally. Given the scarcity of time, please also document any implementation trade-offs that you made (ex. I wrote tests for X, but I would also write tests for Y and Z if the time would permit, I didn't spend much time on the front-end, but normally I would do X).
 
 Finally, this is not a trick project, so if you have any questions, don't hesitate to ask.
 
