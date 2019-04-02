@@ -16,7 +16,7 @@ Finally, this is not a trick project, so if you have any questions, don't hesita
 
 ### When you're done with the project...
 
-When you're done with the project, push your work back into the repo.  Then, reply to the email you received from us letting us know you've pushed your project.  You may be tempted to email us directly, but don't do that because we rely on an applicant tracking system (ATS) to keep on top of candidates in process. Replying through it will help ensure you don't slip through the cracks.
+When you're done with the project, push your work back into the repo.  Then, reply to the email you received from us letting us know you've pushed your project.
 
 ## Rebuilding Profiles
 
