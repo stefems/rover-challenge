@@ -77,9 +77,12 @@ sitter name as a tie-breaker.
 
 ## Discussion Question
 
-You answer should be no more than a couple of paragraphs.
+Imagine you are designing a production web application to compute these search scores
+for sitters and to return a list of sitters for search results. How would you
+do it?
 
-TBD
+Write your answer in a README inside your project github repo. Your
+answer should be no more than a couple of paragraphs.
 
 ## Hint for Testing the Search Ranking Algorithm
 
