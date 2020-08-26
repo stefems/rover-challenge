@@ -7,10 +7,11 @@ data we retrieved from the Google search index.
 Your task is to recreate a search ranking algorithm and compute search
 scores for our sitters.
 
-You should do this with a simple command-line program that can be run locally.
-Once you've finished your program, we'd like you to answer some short
-discussion questions (see below) about how you would build and scale out this
-system in the real world.
+You should do this with *a simple command-line program* that can be run locally.
+
+Once you've finished your program, you'll answer a short *discussion question*
+(see below) about how you would build and scale out this system in the real
+world.
 
 **Please use the language that you feel will best show your skills. Keep in
 mind that if you are brought for an in-person interview, you will continue
@@ -41,7 +42,7 @@ We have saved that information in the attached CSV.
 Your program should import the data for Sitters and Stays to hold in
 memory to use in the next step (Recreating the Search Ranking Algorithm).
 Do not store the data in a database - we'll ask you about that in the
-discussion questions.
+discussion question.
 
 ## Recreating the Search Ranking Algorithm
 
@@ -74,7 +75,9 @@ columns:
 The csv should be sorted by Search Score (descending), sorting alphabetically on the
 sitter name as a tie-breaker.
 
-## Discussion Questions
+## Discussion Question
+
+You answer should be no more than a couple of paragraphs.
 
 TBD
 
