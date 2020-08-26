@@ -7,10 +7,11 @@ data we retrieved from the Google search index.
 Your task is to recreate a search ranking algorithm and compute search
 scores for our sitters.
 
-You should do this with *a simple command-line program* that can be run locally.
+You'll do this by writing *a simple command-line program* that can be run
+locally and that will input and output csv data.
 
-Once you've finished your program, you'll answer a short *discussion question*
-(see below) about how you would build and scale out this system in the real
+Once you've finished your program, there is a short *discussion question*
+to answer (see below) about how you would build this system in the real
 world.
 
 **Please use the language that you feel will best show your skills. Keep in
@@ -21,8 +22,10 @@ success.**
 
 The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
-for the scoring algorithm calculation, best practices, etc). Please include
-instructions on how to setup/run your project locally. 
+for the scoring algorithm calculation, best practices, etc). 
+
+Please include a README with instructions on how to setup and run your project
+locally. 
 
 Finally, if you have any questions, don't hesitate to ask.
 
@@ -39,10 +42,11 @@ reviews customers have left for their stays with sitters.
 
 We have saved that information in the attached CSV.
 
-Your program should import the data for Sitters and Stays to hold in
-memory to use in the next step (Recreating the Search Ranking Algorithm).
-Do not store the data in a database - we'll ask you about that in the
-discussion question.
+Your command-line program should import the data for Sitters and Stays to hold
+in memory to use in the next step (Recreating the Search Ranking Algorithm).
+
+You don't need to store the data in a database - save that for the discussion
+question! 
 
 ## Recreating the Search Ranking Algorithm
 
@@ -77,12 +81,12 @@ sitter name as a tie-breaker.
 
 ## Discussion Question
 
-Imagine you are designing a production web application to compute these search scores
+Imagine you are designing a production web application to compute the search scores
 for sitters and to return a list of sitters for search results. How would you
 do it?
 
-Write your answer in a README inside your project github repo. Your
-answer should be no more than a couple of paragraphs.
+Write your answer in a README inside your project github repo. Your answer
+should be no more than a couple of paragraphs.
 
 ## Hint for Testing the Search Ranking Algorithm
 
