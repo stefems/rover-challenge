@@ -48,6 +48,8 @@ Here's how the search ranking algorithm will work:
   Search Score is equal to the Profile Score. When a sitter has 10 or more
   stays, their Search Score is equal to the Ratings Score.
 
+- Scores should be limited to two decimal places.
+
 ## Output a list of Sitters
 
 Your program should output a csv called `sitters.csv`, containing the following
@@ -94,9 +96,8 @@ should be no more than a couple of paragraphs.
 
 ## When you're done with the project...
 
-When you're done with the project, push your work back into the repo. Then,
-reply to the email you received from us letting us know you've pushed your
-project.
+When you're done with the project, push your work back into the repo and include the output file, `sitters.csv`. Then,
+reply to the email you received from us letting us know you've pushed your project.
 
 # Evaluation 
 
@@ -105,6 +106,7 @@ project.
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
 - [ ] Does the README include your answer to the Discussion Question?
+- [ ] Have you pushed up your CLI code, README, and output file back into the repository? 
 
 The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
