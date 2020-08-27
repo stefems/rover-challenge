@@ -12,7 +12,7 @@ scores for our sitters.
 To recreate our search rankings, you'll create *a simple command-line program* that can be run
 locally and that will input and output csv data.
 
-Additionally, there is a short *discussion question*
+Additionally, there is a short **discussion question**
 to answer (see below) about how you would build this system in the real
 world. 
 
@@ -103,7 +103,8 @@ project.
 ### Checklist:
 - [ ] Are Profile, Rating, and Search Scores computed correctly?
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
-- [ ] Does the README include setup instructions and an answer to the Discussion Question?
+- [ ] Does the README include setup/running instructions (ideally for Mac)?
+- [ ] Does the README include your answer to the Discussion Question?
 
 The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
