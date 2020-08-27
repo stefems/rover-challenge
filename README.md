@@ -7,53 +7,36 @@ data we retrieved from the Google search index.
 Your task is to recreate a search ranking algorithm and compute search
 scores for our sitters.
 
-You'll do this by writing *a simple command-line program* that can be run
+# Requirements 
+
+To recreate our search rankings, you'll create *a simple command-line program* that can be run
 locally and that will input and output csv data.
 
-Once you've finished your program, there is a short *discussion question*
+Additionally, there is a short *discussion question*
 to answer (see below) about how you would build this system in the real
-world.
-
-**Please use the language that you feel will best show your skills. Keep in
-mind that if you are brought for an in-person interview, you will continue
-building upon this solution. Don't use this project as an opportunity to learn
-a new language; use what you know best so that you set yourself up for
-success.**
-
-The work you create here should be representative of code that we'd expect to
-receive from you if you were hired tomorrow (proper abstractions, tests
-for the scoring algorithm calculation, best practices, etc). 
+world. 
 
 Please include a README with instructions on how to setup and run your project
-locally. 
+locally. Note that we are primarily Mac users. 
+
+**Please use the language that you feel will best show your skills.** Keep in
+mind that if you are brought for an in-person interview, you may be asked to continue
+building upon this solution. Feel free to use whatever libraries or packages you wish. 
 
 Finally, if you have any questions, don't hesitate to ask.
 
-### When you're done with the project...
-
-When you're done with the project, push your work back into the repo. Then,
-reply to the email you received from us letting us know you've pushed your
-project.
-
-## Rebuilding Sitter and Stay data
-
+## Recreating the Search Ranking Algorithm
 We were able to write a script and scrape the Google index for all of the
-reviews customers have left for their stays with sitters.
+reviews customers have left for their stays with sitters. 
 
 We have saved that information in the attached CSV.
 
-Your command-line program should import the data for Sitters and Stays to hold
-in memory to use in the next step (Recreating the Search Ranking Algorithm).
-
-You don't need to store the data in a database - save that for the discussion
-question! 
-
-## Recreating the Search Ranking Algorithm
+Your command-line program should import the data to hold in memory, and use it to recreate our search algorithm. You don't need to store the data in a database - save that for the discussion question! 
 
 Here's how the search ranking algorithm will work:
 
 - For each sitter, we first calculate a Profile Score and a Ratings Score.
-  These are then used to calculate the overall Search Score.
+  These are then used to calculate the overall Search Score, which is used for search rankings.
 
 - Profile Score is 5 times the fraction of the English alphabet comprised by the
   distinct letters in what we've recovered of the sitter's name.
@@ -79,15 +62,6 @@ columns:
 The csv should be sorted by Search Score (descending), sorting alphabetically on the
 sitter name as a tie-breaker.
 
-## Discussion Question
-
-Imagine you are designing a production web application to compute the search scores
-for sitters and to return a list of sitters for search results. How would you
-do it?
-
-Write your answer in a README inside your project github repo. Your answer
-should be no more than a couple of paragraphs.
-
 ## Hint for Testing the Search Ranking Algorithm
 
 Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
@@ -108,3 +82,29 @@ Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
 | 10 | 5.00
 | 11 | 5.00
 | 12 | 5.00
+
+## Discussion Question
+
+Imagine you are designing a production web application to compute the search scores
+for sitters and to return a list of sitters for search results. How would you
+do it?
+
+Write your answer in the README inside your project github repo. Your answer
+should be no more than a couple of paragraphs.
+
+## When you're done with the project...
+
+When you're done with the project, push your work back into the repo. Then,
+reply to the email you received from us letting us know you've pushed your
+project.
+
+# Evaluation 
+
+### Checklist:
+- [ ] Are Profile, Rating, and Search Scores computed correctly?
+- [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
+- [ ] Does the README include setup instructions and an answer to the Discussion Question?
+
+The work you create here should be representative of code that we'd expect to
+receive from you if you were hired tomorrow (proper abstractions, tests
+for the scoring algorithm calculation, best practices, etc). 
