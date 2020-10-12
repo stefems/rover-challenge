@@ -91,8 +91,14 @@ Imagine you are designing a production web application to compute the search sco
 for sitters and to return a list of sitters for search results. How would you
 do it?
 
-Write your answer in the README inside your project github repo. Your answer
-should be no more than a couple of paragraphs.
+Please choose one of the following questions to guide your answer:
+
+- How would you adjust the calculation and storage of search scores in a production application?
+- Describe a technical implementation for the frontend / UI for this application. How would the frontend manage state?
+- What infrastructure choices might you make to build and host this project at scale? Suppose your web application must return fast search results with a peak of 10 searches per second. 
+- Describe how you would approach API design for a backend service to provide sitter and rank data to a client/web frontend.
+
+Write your answer in the README inside your project github repo. Your answer should not exceed 400 words.
 
 ## When you're done with the project...
 
