@@ -87,11 +87,8 @@ Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
 
 ## Discussion Question
 
-Imagine you are designing a production web application to compute the search scores
-for sitters and to return a list of sitters for search results. How would you
-do it?
-
-Please choose one of the following questions to guide your answer:
+Imagine you are designing a production web application based on the exercise you've just completed. The application will compute the search scores
+for sitters, return a list of search results based on those scores, and display them to the user through a web UI. Please answer **ONE** of the following discussion questions about the approach you'd take:
 
 - How would you adjust the calculation and storage of search scores in a production application?
 - Describe a technical implementation for the frontend / UI for this application. How would the frontend manage state?
