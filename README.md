@@ -38,15 +38,15 @@ Here's how the search ranking algorithm will work:
 - For each sitter, we first calculate a Profile Score and a Ratings Score.
   These are then used to calculate the overall Search Score, which is used for search rankings.
 
-- Profile Score is 5 times the fraction of the English alphabet comprised by the
-  distinct letters in what we've recovered of the sitter's name.
+- The Profile Score is 5 times the fraction of the English alphabet comprised by the
+  distinct letters in what we've recovered of the sitter's name. For example, the sitter name `Leilani R.` has 6 distinct letters.
 
-- Ratings Score is the average of their stay ratings.
+- The Ratings Score is the average of their stay ratings.
 
 - The Search Score is a weighted average of the Profile Score and Ratings
-  Score, weighted by the number of stays. When a sitter has no stays, their
-  Search Score is equal to the Profile Score. When a sitter has 10 or more
-  stays, their Search Score is equal to the Ratings Score.
+  Score. When a sitter has no stays, their Search Score is equal to the Profile Score. When a sitter has 10 or more
+  stays, their Search Score is equal to the Ratings Score. The idea is that as a sitter gets more reviews, we will weigh the
+  Ratings Score more heavily.
 
 - Scores should be limited to two decimal places.
 
@@ -99,8 +99,7 @@ Write your answer in the README inside your project github repo. Your answer sho
 
 ## When you're done with the project...
 
-When you're done with the project, push your work back into the repo and include the output file, `sitters.csv`. Then,
-reply to the email you received from us letting us know you've pushed your project.
+When you're done with the project, compress your project directory into a Zip file or similar, making sure to include the output file, `sitters.csv`. Then, reply to the email you received from us with your attachment.
 
 # Evaluation 
 
@@ -109,7 +108,7 @@ reply to the email you received from us letting us know you've pushed your proje
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
 - [ ] Does the README include your answer to the Discussion Question?
-- [ ] Have you pushed up your CLI code, README, and output file back into the repository? 
+- [ ] Have you included your CLI code, README, and output file in the Zip folder? 
 
 The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
