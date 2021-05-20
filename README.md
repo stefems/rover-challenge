@@ -17,7 +17,7 @@ to answer (see below) about how you would build this system in the real
 world. 
 
 Please include a README with instructions on how to setup and run your project
-locally. Note that we are primarily Mac users. 
+locally, as well as a copy of the output CSV you generate. Note that we are primarily Mac users. 
 
 **Please use the language that you feel will best show your skills.** Keep in
 mind that if you are brought for an in-person interview, you may be asked to continue
@@ -108,8 +108,9 @@ When you're done with the project, compress your project directory into a Zip fi
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
 - [ ] Does the README include your answer to the Discussion Question?
-- [ ] Have you included your CLI code, README, and output file in the Zip folder? 
+- [ ] Have you included your CLI code, README, **and output file** in the Zip folder?
+- [ ] Have you written tests to verify that your code is working as expected?
 
-The work you create here should be representative of code that we'd expect to
+**Lastly:** The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
 for the scoring algorithm calculation, best practices, etc). 
