@@ -31,7 +31,7 @@ reviews customers have left for their stays with sitters.
 
 We have saved that information in the attached CSV.
 
-Your command-line program should import the data to hold in memory, and use it to recreate our search algorithm. You don't need to store the data in a database - save that for the discussion question! 
+Your command-line program should import the data to hold in memory and use it to recreate our search algorithm. Although you don't need to store the data in a database, please use an Object Oriented approach and create helper classes to **model your data as if you were going to save it using a relational database**.
 
 Here's how the search ranking algorithm will work:
 
@@ -104,6 +104,7 @@ When you're done with the project, compress your project directory into a Zip fi
 # Evaluation 
 
 ### Checklist:
+- [ ] Have you used an Object Oriented approach to model the data ingested from the CSV in a way would support storage in a relational database?
 - [ ] Are Profile, Rating, and Search Scores computed correctly?
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
