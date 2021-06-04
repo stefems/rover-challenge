@@ -97,7 +97,7 @@ for sitters, return a list of search results based on those scores, and display 
 - What infrastructure choices might you make to build and host this project at scale? Suppose your web application must return fast search results with a peak of 10 searches per second. 
 - Describe how you would approach API design for a backend service to provide sitter and rank data to a client/web frontend.
 
-Write your answer in the README inside your project github repo. Your answer should not exceed 400 words.
+Write your answer in the README inside your project github repo. Please keep your answer concise, but provide as much detail as needed to address the prompt.
 
 ## When you're done with the project...
 
