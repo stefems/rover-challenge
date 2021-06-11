@@ -31,9 +31,9 @@ reviews customers have left for their stays with sitters.
 
 We have saved that information in the attached CSV.
 
-Your command-line program should import the data to hold in memory and use it to recreate our search algorithm. Although you don't need to store the data in a database, please use an Object Oriented approach and create classes to **model your data as if you were going to save it using a relational database**.
+Your command-line program should import the data to hold in memory (no need to use an actual database) and use it to recreate our search algorithm. At Rover, we write domain-driven code, so using an Object Oriented or other domain-centric approach will set you up for success in the in person interview. For example, one viable approach is modeling your data as if you were going to save it using a relational database.
 
-If you are using a language that doesn't traditionally use an OO approach, please discuss this with the person who sent you this prompt in advance of beginning work.
+If you are using a language that doesn't traditionally use an OO or domain-centric approach, please discuss this with the person who sent you this prompt in advance of beginning work, in order to have the best chance of success if you advance to the in person interview.
 
 Here's how the search ranking algorithm will work:
 
@@ -106,7 +106,7 @@ When you're done with the project, compress your project directory into a Zip fi
 # Evaluation 
 
 ### Checklist:
-- [ ] Have you used an Object Oriented approach to model the data ingested from the CSV in a way that would support storage in a relational database?
+- [ ] Have you modeled the data ingested from the CSV in a way that would support storage in a relational database?
 - [ ] Are Profile, Rating, and Search Scores computed correctly?
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
