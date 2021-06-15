@@ -31,9 +31,9 @@ reviews customers have left for their stays with sitters.
 
 We have saved that information in the attached CSV.
 
-Your command-line program should import the data to hold in memory and use it to recreate our search algorithm. Although you don't need to store the data in a database, please use an Object Oriented approach and create classes to **model your data as if you were going to save it using a relational database**.
+Your command-line program should import the data to hold in memory (no need to use an actual database) and use it to recreate our search algorithm. At Rover, we write domain-driven code, so using an Object Oriented or other domain-centric approach will set you up for success in the in person interview. For example, one viable approach is modeling your data as if you were going to save it using a relational database.
 
-If you are using a language that doesn't traditionally use an OO approach, please discuss this with the person who sent you this prompt in advance of beginning work.
+If you are using a language that doesn't traditionally use an OO or domain-centric approach, please discuss this with the person who sent you this prompt in advance of beginning work, in order to have the best chance of success if you advance to the in person interview.
 
 Here's how the search ranking algorithm will work:
 
@@ -97,7 +97,7 @@ for sitters, return a list of search results based on those scores, and display 
 - What infrastructure choices might you make to build and host this project at scale? Suppose your web application must return fast search results with a peak of 10 searches per second. 
 - Describe how you would approach API design for a backend service to provide sitter and rank data to a client/web frontend.
 
-Write your answer in the README inside your project github repo. Your answer should not exceed 400 words.
+Write your answer in the README inside your project github repo. Please keep your answer concise, but provide as much detail as you feel is necessary; we're not looking for a thesis, just an understanding of how you think about solutions and how you convey your thoughts in the written word.
 
 ## When you're done with the project...
 
@@ -106,7 +106,7 @@ When you're done with the project, compress your project directory into a Zip fi
 # Evaluation 
 
 ### Checklist:
-- [ ] Have you used an Object Oriented approach to model the data ingested from the CSV in a way that would support storage in a relational database?
+- [ ] Have you modeled the data ingested from the CSV in a way that would support storage in a relational database?
 - [ ] Are Profile, Rating, and Search Scores computed correctly?
 - [ ] Does the output file include all necessary columns, and is it in descending order based on Search Score? 
 - [ ] Does the README include setup/running instructions (ideally for Mac)?
