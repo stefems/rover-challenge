@@ -93,7 +93,7 @@ Imagine you are designing a Rover-like production web application based on the e
 for sitters, return a list of search results based on those scores, and display them to the user through a web UI. Please answer **ONE** of the following discussion questions about the approach you'd take:
 
 - How would you adjust the calculation and storage of search scores in a production application?
-- Describe a technical implementation for the frontend you would use to display a list of sitters and their ratings. How would the frontend manage state as users interact with a page?
+- Describe a technical implementation for the frontend you would use to display a list of sitters and their scores. How would the frontend manage state as users interact with a page?
 - What infrastructure choices might you make to build and host this project at scale? Suppose your web application must return fast search results with a peak of 10 searches per second. 
 - Describe how you would approach API design for a backend service to provide sitter and rank data to a client/web frontend.
 
