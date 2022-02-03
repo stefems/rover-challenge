@@ -9,14 +9,13 @@ scores for our sitters.
 
 # Requirements 
 
-To recreate our search rankings, you'll create *a simple command-line program* that can be run
-locally and that will input and output csv data.
+To recreate our search rankings, you'll create *a simple command-line program* that will read in and write out csv data. We ask that you also include tests that demonstrate your code is working as expected.
 
 Additionally, there is a short **discussion question**
 to answer (see below) about how you would build this system in the real
-world. 
+world.
 
-Please include a README with instructions on how to setup and run your project
+Lastly, please include a README with instructions on how to setup and run your project
 locally, as well as a copy of the output CSV you generate. Note that we are primarily Mac users. 
 
 **Please use the language that you feel will best show your skills.** Keep in
