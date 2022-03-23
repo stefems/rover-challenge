@@ -49,7 +49,7 @@ Here's how the search ranking algorithm will work:
   stays, their Search Score is equal to the Ratings Score. The idea is that as a sitter gets more reviews, we will weigh the
   Ratings Score more heavily.
 
-- Scores should be limited to two decimal places.
+- Scores should contain exactly two decimal places.
 
 ## Output a list of Sitters
 
