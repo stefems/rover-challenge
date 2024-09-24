@@ -86,6 +86,10 @@ Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
 | 11 | 5.00
 | 12 | 5.00
 
+(2.5 * .8) + [(5 * .1) + (2 * .1)] = 
+
+profileScore * (10 - #ratings) + (ratingScore * ratings)/#ratings = searchScore
+
 ## Discussion Question
 
 Imagine you are designing a Rover-like production web application based on the exercise you've just completed. The application will compute the search scores
