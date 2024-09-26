@@ -87,6 +87,7 @@ Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
 | 12 | 5.00
 
 (2.5 * .8) + [(5 * .1) + (2 * .1)] = 
+(2.5 * .7) + [(5 * .1) + (2 * .1) + (3 * .1)] =
 
 profileScore * (10 - #ratings) + (ratingScore * ratings)/#ratings = searchScore
 
@@ -120,3 +121,6 @@ When you're done with the project, compress your project directory into a Zip fi
 **Lastly:** The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
 for the scoring algorithm calculation, best practices, etc). 
+
+MY NOTES:
+- run linter: npx eslint .
