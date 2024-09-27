@@ -1,6 +1,15 @@
 import { Rating } from "./rating";
 import utils from "./utils";
 
+interface SitterType {
+    email: string;
+    name: string;
+    profileScore: number;
+    ratingsScore: number;
+    searchScore: number;
+    ratings: Array<number>;
+}
+
 export class Sitter {
     private email: string;
     private name: string;
@@ -9,21 +18,29 @@ export class Sitter {
     private searchScore: number;
     private ratings: Array<number>;
 
-    public constructor(email: string, name: string) {
-        if (name === '') {
-            throw new Error('Sitter Error: cannot initialize sitter with empty name.');
+    public constructor(email: string, name: string, dbSitter?: SitterType) {
+        if (dbSitter) {
+            // this.initFromDBEntry(dbSitter);
+        } else {
+            if (name === '') {
+                throw new Error('Sitter Error: cannot initialize sitter with empty name.');
+            }
+            if (email === '' || !utils.isPossibleEmail(email)) {
+                throw new Error('Sitter Error: cannot initialize sitter with empty or invalid email.');
+            }
+            this.email = email;
+            this.name = name;
+            this.ratings = [];
+            this.ratingsScore = 0;
+            this.profileScore = 0;
+            this.searchScore = 0;
+            this.initProfileScore();
         }
-        if (email === '' || !utils.isPossibleEmail(email)) {
-            throw new Error('Sitter Error: cannot initialize sitter with empty or invalid email.');
-        }
-        this.email = email;
-        this.name = name;
-        this.ratings = [];
-        this.ratingsScore = 0;
-        this.profileScore = 0;
-        this.searchScore = 0;
-        this.initProfileScore();
     }
+
+    // private initFromDBEntry(sitterData: SitterType) {
+        /* Note: this would be an initialization option when getting sitter data from the DB */
+    // }
 
     public updateRatings(rating: number) {
         const newRating = new Rating(rating);

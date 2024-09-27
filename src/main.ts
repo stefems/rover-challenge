@@ -6,7 +6,7 @@ import { Review } from './review';
 
 export class Main {
     private reviews: Array<Review>;
-    private sitters: Map<string, Sitter>;
+    private sitters: Map<string, Sitter>; //string is sitter's email. assumption: sitter email will be unique.
     private filename: string;
     private delimiter: string;
     private columnCount: number;
@@ -48,6 +48,10 @@ export class Main {
     }
 
     private isReviewPossibleDuplicate(newReview: Review): boolean {
+        /* efficiency note:
+            change this.reviews type from Array<Review> to Map<Sitter.email, Array<Reviews>> in order to
+            more efficiently find and compare possible review duplicates.
+        */
         return this.reviews.some((review) => Review.isPossibleDuplicate(review, newReview));
     }
 
@@ -92,6 +96,7 @@ export class Main {
     }
 
     private updateSitterInformation(review: Review): void {
+        // is it more effecient to create and maintain a sorted list of sitters and update here each time?
         const reviewSitterEmail = review.getSitterEmail();
         const reviewSitterName = review.getSitterName();
         let sitter: Sitter;

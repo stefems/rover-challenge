@@ -1,28 +1,102 @@
 # INSTALLATION INSTRUCTIONS
+Open your Mac's terminal. Command + spacebar, search for 'Terminal', and open the first result.
 
-NPM & Node installation
-version check
-exract zip
-open command line
-cd into the extracted directory
-npm i in the root directory
+Enter the following command
 
+npm -v
+
+into the terminal and hit enter. If the command is not found, please follow the instructions below for installing NPM and Node.
+
+## NPM & Node installation
+If you don't have NPM or Node.js you'll want to install the Node Version Manager. In the terminal, paste and run the following command:
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+If a popup window appears prompting you to install Xcode's command line developer tools, click the install button. If you need more help installing the Xcode command line tools, follow the link below. You can download these tools through the Apple Store, or manually if the Apple Store makes a fit about your OS version.
+https://mac.install.guide/commandlinetools/
+
+If you do not receive a popup but if the installation still fails with a message about needing Xcode, you'll still need to install the Xcode tools. Refer to the guide above. Once the command line tools are installed, close your terminal, re-open it, and run this command again to install the Node Version Manager (NVM). (Pasted again below.)
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+Once you successfully run the NVM installation command, run the following command to check your NVM version:
+
+nvm -v
+
+If the command is not recognized, you may need to close and force quit the terminal and re-open it to try again. If that still doesn't work, you may need to run the NVM installation script again, and this time look at the ouput to see if it recommends running a script. That script should look something like the following command. Run the recommended script, or the one below, and it should enable you to run the above command that checks the nvm version.
+
+`export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh ] && \. "$NVM_DIR/nvm.sh"`
+
+If at this point you are still unable to check your nvm version, follow the instructions found at this link: https://github.com/nvm-sh/nvm?tab=readme-ov-file#troubleshooting-on-macos
+
+If the version check command works correctly you'll see a version number, meaning that you have NVM installed.
+
+The next step is to get the correct versions of Node and NPM installed. Enter this command in the terminal:
+
+nvm install 18.20.4
+
+## Handling the ZIP
+Once you've downloaded the ZIP file, use your Finder application to right-click the zip and select 'Open With' and then select 'Archive Utility'. This will create a new folder (now unzipped) in the same directory.
+
+## Back in the Terminal
+Once again using the terminal, navigate to the location of this newly created folder, likely inside your Downloads folder. Use this command to get to your Downloads folder.
+
+cd Downloads/
+
+Then you will need to cd into the name of the folder with
+
+cd FOLDER_NAME_HERE
+
+## Installing Node Modules
+Now that you're in the root directory of the folder, run the following command to install the necessary dependencies needed to execute the code.
+
+npm i
 
 # GENERATING THE SITTERS.CSV
-Once you've followed the installation instructions, enter the following command in your command line at the root:
+Once you've followed the installation instructions, enter the following command in your command line at the root directory:
 
 npm run start
 
 # RUNNING TESTS
-Once you've followed the installation instructions, enter the following command in your command line at the root:
+Once you've followed the installation instructions, enter the following command in your command line at the root directory:
 
 npm run test
 
 # DISCUSSION QUESTION & ANSWER
 Q: _Describe a technical implementation for the frontend you would use to display a list of sitters and their scores. How would the frontend manage state as users interact with a page?_
 
-A: 
+A: I'd choose React.js for the front-end framework. I would also use zustand for state management, providing a simple way for any particular component to update the front-end’s global store of sitters. This can help avoid potential complications from prop-drilling or tightly coupled components. If the website has a lot of globally-overlapping elements, like a menu bar, cookies alert, or notification banner, zustand would also help maintain a global state for ensuring these overlapping elements do not end up in inescapable or inaccessible situations. When it comes to the rest of the state management, I would prefer to use React’s built-in state hooks.<sup>1</sup> As for displaying a search result’s list of sitters and their scores, we first have to determine an effective pattern for loading the sitters from a back-end service. For live-reloading search results, the search bar should not send a sitters request on every keystroke: the fetch call should be “debounced” and wait for the user to pause their typing in order to ensure the API is not called an excessive number of times. The search results will be loaded from the API, stored in a state variable, and then the results will be rendered.<sup>2</sup> In order to ensure proper UI state while data is being loaded, a React Suspense component or additional state variables can be used to render a loading animation or placeholder content. A more detailed list of the functions used to carry this out might be as follows: SearchBarComponent has a debounced onUpdate function that calls an async APIHelperUtil function to load sitters data, the SearchBarComponent will receive a promise or pass in a callback function that will then call the global store’s setter function to update the list of sitters, and any component in the DOM tree that is using a getter function for the sitters will automatically update,<sup>3</sup> thereby rendering the search results in a possible SittersSearchResults component. The rendering of the search result’s sitters can include the standard values for each sitter: profile photo, name, average rating, etc, as specified by design. If the front-end provides a service for hiring and scheduling a sitter, zustand could also be used to maintain a grouping of state variables dedicated to the booking process. This booking process would need to utilize numerous API calls, but that might be outside the bounds of this question.
 
+<sup>1</sup>: I’ve seen a few too many React projects using Redux when it wasn’t necessary, and in my opinion if you’re using a framework you should strive to develop patterns that utilize that framework’s core aspects.
+<sup>2</sup>: rendered with the appropriate null/empty checks to ensure invalid data doesn’t end up in components or visible to the user.
+<sup>3</sup>: zustand does not require any explicit observer model and instead will cause the component to rerender whenever one of the values defined in the getter is updated.
+
+# Files Included
+
+- index.ts : the file that is run by npm run start. It will output/replace the sitters.csv file.
+
+- src/main.ts : the file that handles the CSV parsing, CSV output, and uses the classes to create and store a list of sitters and reviews in memory.
+- src/rating.ts : the file that contains the Rating class.
+- src/review.ts : the file that contains the Review class.
+- src/sitter.ts : the file that contains the Sitter class.
+- src/utils.ts : the file that contains util functions.
+
+- test_csvs/ : the folder that contains CSVs useful for testing parsing and data errors.
+- main.test.ts : the file that is run by npm run test. It contains all of the tests.
+
+Misc Dev Files: these are configuration-related files that are not to be edited.
+.gitignore
+.nvmrc
+.npmrc
+eslint.config.mjs
+jest.config.js
+tsconfig.json
+package-lock.json
+package.json
+
+# END OF CANDIDATE'S README, INITIAL README AS FOLLOWS
+
+<hr>
 
 # Rover Coding Project
 
@@ -142,6 +216,3 @@ When you're done with the project, compress your project directory into a Zip fi
 **Lastly:** The work you create here should be representative of code that we'd expect to
 receive from you if you were hired tomorrow (proper abstractions, tests
 for the scoring algorithm calculation, best practices, etc). 
-
-MY NOTES:
-- run linter: npx eslint .

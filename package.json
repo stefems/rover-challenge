@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Rover.com was destroyed in a terrible Amazon Web Services and GitHub accident! Thankfully, no dogs were harmed, but we will have to rebuild our site using data we retrieved from the Google search index.",
   "main": "index.js",
+  "engines" : { 
+    "npm" : "=10.7.0",
+    "node" : "=18.20.4"
+  },
   "scripts": {
     "test": "jest",
     "start": "tsx ./index.ts"
