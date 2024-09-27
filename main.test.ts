@@ -240,7 +240,7 @@ describe('Sitter Class Tests', () => {
 });
 
 /*
-Todo: Other CSV Tests:
+Other Possible CSV Tests:
 - missing read/write permissions error on load reviews.csv or on sitters.csv (when already existing)
 - incorrect file type, not csv
 - error when reading corrupted file
