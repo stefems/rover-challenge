@@ -13,7 +13,7 @@ interface SitterType {
 export class Sitter {
     private email: string;
     private name: string;
-    private profileScore: number;
+    private profileScore: number; // keeping all of the scores as numbers and only using fixed decimal places (2) when getter function asks for it, keeping the calculations as accurate as possible.
     private ratingsScore: number;
     private searchScore: number;
     private ratings: Array<number>;
