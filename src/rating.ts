@@ -1,3 +1,5 @@
+// created a Rating class to contain the error handling. could be extended later on.
+
 export class Rating {
     private rating: number;
 

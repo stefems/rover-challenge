@@ -3,9 +3,10 @@ import utils from './utils';
 
 /*
 Note for reviewers: as you read through this file you'll see that the error messages refer
-    to csv parsing error. In the future, if the Review class was going to be used in contexts
+    to csv parsing errors. In the future, if the Review class was going to be used in contexts
     separate from CSV parsing, I would refactor this class to throw error messages worded
-    differently and only referring to invalid arguments.
+    differently and only referring to invalid arguments, as well as generally decoupling the
+    csv parsing from the review class as much as possible.
 */
 
 export class Review {

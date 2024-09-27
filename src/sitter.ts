@@ -82,17 +82,17 @@ export class Sitter {
     }
 
     private initProfileScore() {
-        // todo make more effecient
-        const letterArray: Array<string> = [];
+        const letterMap: Map<string, number> = new Map();
+        let additions = 0;
         const isLetterTest = /[a-zA-Z]/
         for (let i = 0; i < this.name.length; i++) {
-            if (isLetterTest.test(this.name[i])) {
-                if (!letterArray.some((letter) => this.name[i].toLowerCase() === letter)) {
-                    letterArray.push(this.name[i].toLowerCase())
-                }
+            const letter = this.name[i];
+            if (isLetterTest.test(letter) && !letterMap.has(letter.toLowerCase())) {
+                letterMap.set(letter.toLowerCase(), 1);
+                additions++;
             }
         }
-        this.profileScore = (letterArray.length/26 * 5);
+        this.profileScore = (additions/26 * 5);
         this.searchScore = this.profileScore;
     }
 }

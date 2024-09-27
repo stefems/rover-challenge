@@ -56,14 +56,15 @@ export class Main {
     }
 
     private outputSitters(): string {
-        // todo optimize
         let output = `email,name,profile_score,ratings_score,search_score\n`;
-        const sortedSitters: Array<Sitter> = [];
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        for (const [key, sitter] of this.sitters) {
-            sortedSitters.push(sitter);
-        }
-        sortedSitters.sort((sitterA, sitterB) => {
+        /* effeciency note:
+            im not the biggest fan of converting a map into an array and then sorting it, but im not
+            sure of another approach that would be worthwhile. a potential option is maintain a sorted
+            array as a class member and update it each time we read in a review, but that is probably
+            more comparisons (less efficient) than waiting to sort once all sitter instances have been
+            created and updated.
+        */
+        const sortedSitters: Array<Sitter> = (Array.from(this.sitters.values())).sort((sitterA, sitterB) => {
             const aScore = parseFloat(sitterA.getSearchScoreFixed());
             const bScore = parseFloat(sitterB.getSearchScoreFixed());
             if (aScore === bScore) {
@@ -96,7 +97,6 @@ export class Main {
     }
 
     private updateSitterInformation(review: Review): void {
-        // is it more effecient to create and maintain a sorted list of sitters and update here each time?
         const reviewSitterEmail = review.getSitterEmail();
         const reviewSitterName = review.getSitterName();
         let sitter: Sitter;
