@@ -1,3 +1,29 @@
+# INSTALLATION INSTRUCTIONS
+
+NPM & Node installation
+version check
+exract zip
+open command line
+cd into the extracted directory
+npm i in the root directory
+
+
+# GENERATING THE SITTERS.CSV
+Once you've followed the installation instructions, enter the following command in your command line at the root:
+
+npm run start
+
+# RUNNING TESTS
+Once you've followed the installation instructions, enter the following command in your command line at the root:
+
+npm run test
+
+# DISCUSSION QUESTION & ANSWER
+Q: _Describe a technical implementation for the frontend you would use to display a list of sitters and their scores. How would the frontend manage state as users interact with a page?_
+
+A: 
+
+
 # Rover Coding Project
 
 Rover.com was destroyed in a terrible Amazon Web Services and GitHub accident!
@@ -85,11 +111,6 @@ Suppose there is a sitter whose Profile Score is 2.5 and who gets a rating of
 | 10 | 5.00
 | 11 | 5.00
 | 12 | 5.00
-
-(2.5 * .8) + [(5 * .1) + (2 * .1)] = 
-(2.5 * .7) + [(5 * .1) + (2 * .1) + (3 * .1)] =
-
-profileScore * (10 - #ratings) + (ratingScore * ratings)/#ratings = searchScore
 
 ## Discussion Question
 

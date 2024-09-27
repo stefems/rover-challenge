@@ -1,3 +1,6 @@
+import { Rating } from "./rating";
+import utils from "./utils";
+
 export class Sitter {
     private email: string;
     private name: string;
@@ -7,6 +10,12 @@ export class Sitter {
     private ratings: Array<number>;
 
     public constructor(email: string, name: string) {
+        if (name === '') {
+            throw new Error('Sitter Error: cannot initialize sitter with empty name.');
+        }
+        if (email === '' || !utils.isPossibleEmail(email)) {
+            throw new Error('Sitter Error: cannot initialize sitter with empty or invalid email.');
+        }
         this.email = email;
         this.name = name;
         this.ratings = [];
@@ -17,7 +26,8 @@ export class Sitter {
     }
 
     public updateRatings(rating: number) {
-        this.ratings.push(rating);
+        const newRating = new Rating(rating);
+        this.ratings.push(newRating.getRating());
         const getAverage = (list: Array<number>): number => list.reduce((sum, rating) => sum + rating)/list.length;
         let newSearchScore: number = 0;
         this.ratingsScore = getAverage(this.ratings);
@@ -55,6 +65,7 @@ export class Sitter {
     }
 
     private initProfileScore() {
+        // todo make more effecient
         const letterArray: Array<string> = [];
         const isLetterTest = /[a-zA-Z]/
         for (let i = 0; i < this.name.length; i++) {

@@ -1,6 +1,6 @@
-import { Main } from "./main";
+import { Main } from "./src/main";
 
-const FILENAME = 'reviews.csv';
+const FILENAME = './reviews.csv';
 const DELIMITER = ',';
 
 const main = new Main(FILENAME, DELIMITER);

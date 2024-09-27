@@ -23,7 +23,6 @@ export class Main {
     }
 
     public async loadDataFromCSV(): Promise<void> {
-        // todo throw error on not csv file
         const reader = fs.createReadStream(this.filename);
         reader.on('error', function(e) {
             if (e.message.indexOf('no such file') !== -1) {
