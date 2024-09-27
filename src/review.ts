@@ -7,6 +7,11 @@ Note for reviewers: as you read through this file you'll see that the error mess
     separate from CSV parsing, I would refactor this class to throw error messages worded
     differently and only referring to invalid arguments, as well as generally decoupling the
     csv parsing from the review class as much as possible.
+
+    As for modeling the data for easily pushing to a rdb: I would likely add char counts to
+    ensure string types can be used for the correct-length db text types, would set the 
+    number types to small int db number types, and would ensure the date is translated
+    correctly into the date db type.
 */
 
 export class Review {
